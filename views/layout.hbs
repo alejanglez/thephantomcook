@@ -1,0 +1,101 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/styles.css" />
+  <link rel="stylesheet" href="/stylesheets/styles.css.map" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Indie+Flower" />
+  <link rel="shortcut icon" href="/images/logobw.png">
+</head>
+
+<body>
+  <nav role="navigation" class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="/"><img class="logo-nav" src="/images/Frame2.png" width="50" height="50"
+        alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">User Sign-up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signupCook"> Be a Cook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/main">User main</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/private">Cook Private</a>
+        </li>
+
+      </ul>
+      <div class="navbarbutton">
+        <a href="/login" class="btn btn-outline-secondary btn-login" role="button" aria-pressed="true">USER Login</a>
+        <a href="/loginCook" class="btn btn-outline-secondary btn-login" role="button" aria-pressed="true">COOK
+          Login</a>
+        <form id="logout-form" action="/logout" method="POST">
+          <button type="submit" class="btn btn-secondary">Logout</button>
+        </form>
+      </div>
+      {{!-- <form id="logout-form" action="/logoutCook" method="POST">
+        <button type="submit" class="btn btn-secondary">Cook Logout</button>
+      </form> --}}
+  </nav>
+
+  <div>
+    {{{body}}}
+  </div>
+
+  <footer class="footer">
+    <div id="footer" class="container-fluid p-2 p-md-3">
+      <a href="https://twitter.com/{{ site.twitter }}"><img class="logosocial" src="/images/logotwitter.png" width="35"
+          height="35" alt="Logotwitter"> </a>
+      <a href="https://instagram.com/the_foodie_phantom/{{ site.instagram }}"><img class="logoinstagram"
+          src="/images/logoinstagram.png" width="35" height="35" alt="logoinstagram"></a></li>
+      <a href="https://youtube.com/{{ site.youtube }}"><img class="logosocial" src="/images/logoyoutube.png" width="35"
+          height="35" alt="logoyotube"> </a>
+      <a href="https://whatsapp.com/{{ site.whatsapp }}"><img class="logosocial" src="/images/logowhats.png" width="35"
+          height="35" alt="logoyotube"> </a>
+      <a href="https://gmail.com/{{ site.gmail }}"><img class="logosocial" src="/images/logogmail.png" width="35"
+          height="35" alt="logogmail"> </a>
+
+      <p>Designed and built with ♥ by Alejandro González - Rodrigo Hernández </p>
+      <p>THE FOODIE PHANTOM © SPAIN - 09/2020</p>
+      <p>Typography "Britanica" by SANTIREYDESIGN
+        <a href="http://santireydesign.com/"><img class="logosanti" src="/images/logosanti.png" width="30" height="30"
+            alt="logosanti"></a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  {{#if scriptName}}
+  <script src="/javascripts/{{scriptName}}.js"></script>
+  {{/if}}
+  <script src="/javascripts/script.js"></script>
+  {{!-- {{#if javascript}}
+  <script src="/javascripts/{{javascript}}.js"></script>
+  {{/if}} --}}
+</body>
+
+</html>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{{#if cookInSession}}
+<h2>Welcome, {{ cookInSession.cookname }}!</h2>
+<p>This is your profile page my friend!</p>
+<button>
+    <a href="/cookProfile">Reload the page</a>
+</button>
+{{else}}
+<p>Still no logged in user, sorry!</p>
+{{/if}}

@@ -1,0 +1,45 @@
+<div class="container">
+  <h2> Complete Menu! </h2>
+  {{#unless menus}}
+  <p>There are no posts yet!</p>
+  {{/unless}}
+  {{#each menus}}
+  <div class="col-md-4 mb-5">
+    <div class="card" style="width: 18rem;">
+      <img src="{{imageUrl}}" class="card-img-top" alt="{{title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{description}}</p>
+        <p class="card-text">{{price}} € </p>
+
+
+        <h5>order options:</h5>
+        <form action="/orders/order-create" method="post">
+          <input name="id" value={{_id}} hidden>
+          <label for="quantity">Please fill how many dished do u want </label>
+          <select class="quatity-input" name="quantity" required="true">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select> <br>
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <p>There are no menus yet!</p>
+  {{/each}}
+  {{!-- <label for="Added total price">Total price</label>
+€<input name="totalPrice" class="order-price-sum" type="number" readonly style="background-color:lightgray"
+  required="true"> --}}
+  <div class="buttonmenu">
+    <button type="submit" class="btn btn-warning">Buy</button>
+    </form>
+    <div class="goback">
+      <a href="/explore">
+        <button class="btn btn-warning">Go back</button></a>
+    </div>
+  </div>
+</div>

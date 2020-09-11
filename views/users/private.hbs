@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="webheight">
+        {{#if cookInSession}}
+        <h2>Welcome, {{ cookInSession.cookname }}!</h2>
+        <p>This is your profile page my friend!</p>
+
+
+        <a class="nav-link" href="/menu">Menus</a>
+        <a class="nav-link" href="/orders/orders-confirmed">Orders list</a>
+
+        {{else}}
+        You don't have access!
+        {{/if}}
+    </div>
+</div>

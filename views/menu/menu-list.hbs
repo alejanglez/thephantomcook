@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Your Menus!</h1>
+  <hr>
+  <div class="row">
+    {{#each menus}}
+    <div class="col-md-4 mb-5">
+      <div class="card" style="width: 18rem;">
+        <img src="{{imageUrl}}" class="card-img-top" alt="{{title}}">
+        <div class="card-body">
+          <h3 class="card-title">{{title}}</h3>
+          <p class="card-text">{{description}}</p>
+          <p class="card-text">{{price}} €</p>
+          <div class="buttonmenu">
+            <a href="/menus/{{id}}/edit"><button class="btn btn-warning">Edit</button></a>
+
+            <form action="/menus/{{id}}/delete" method="post">
+              <button class="btn btn-warning">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{else}}
+    <p>There are no menus yet!</p>
+    {{/each}}
+    <hr />
+  </div>
+</div>

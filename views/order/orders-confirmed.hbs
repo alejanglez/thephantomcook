@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Posts</h2>
+
+  <ul>
+    {{#each orders}}
+    <div class="list">
+      <li> Order number {{ this._id }} by {{this.userId.username}} created at {{this.created_at}}
+        <a href="/orders/orders-confirmed/{{ _id }}" class="btn btn-warning">Go to de ORDER!</a>
+      </li>
+    </div>
+    {{/each}}
+  </ul>
+</div>

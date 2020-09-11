@@ -1,0 +1,52 @@
+<div class="container">
+    <h1>Order waiting!!</h1>
+    <h2>Total price is <span id="total"> </span> €</h2>
+    <hr>
+    {{#each orders}}
+
+    <div class="product" class="card" style="width: 18rem;">
+        <img src="{{this.menuId.imageUrl}}" class="card-img-top" alt="{{this.menuId.title}}">
+        <div class="card-body">
+            <h5 class="card-title">{{this.menuId.title}}</h5>
+            <p class="card-text">{{this.menuId.description}}</p>
+            <p class="card-text"> <span class="quantity"> {{this.quantity}} </span> UD x <span
+                    class="price">{{this.menuId.price}}</span>€ = <span class="subtotal"> </span>€
+            </p>
+            <br>
+            <h5 class="card-title"> Menu made with ♥ by {{this.menuId.menuOwnerRef.cookname}}</h5>
+            <p class="card-text"> To take away from {{this.menuId.menuOwnerRef.address}} of
+                {{this.menuId.menuOwnerRef.region}} </p>
+            <p class="card-text"> Waiting for you in {{this.menuId.menuOwnerRef.deliveryTime}} hours </p>
+            <p class="card-text"> Contact number {{this.menuId.menuOwnerRef.phone}}</p>
+        </div>
+    </div>
+
+    <br>
+
+    {{/each}}
+</div>
+
+<script>
+
+    window.onload = function () {
+        calcSubtotal();
+    }
+    const calcSubtotal = () => {
+        let subtotal = 0;
+        let totalCost = 0;
+        const elements = document.querySelectorAll(".product");
+        elements.forEach((ele) => {
+            let qty = Number(ele.getElementsByClassName("quantity")[0].innerText);
+            let price = Number(ele.getElementsByClassName("price")[0].innerText);
+            subtotal = qty * price;
+            console.log(subtotal);
+            console.log(qty);
+            console.log(price);
+            ele.getElementsByClassName("subtotal")[0].innerText = `€ ${subtotal.toFixed(
+                2
+            )} `;
+            totalCost += subtotal;
+        });
+        document.getElementById("total").innerText = totalCost.toFixed(2);
+    };
+</script>

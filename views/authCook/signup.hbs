@@ -1,0 +1,159 @@
+<div class="container">
+
+  <h2>COOK Signup</h2>
+
+  <form action="/signupCook" method="POST">
+    <div class="form-group">
+      <label for="cookname">Cookname</label>
+      <input type="text" class="form-control" id="cookname" name="cookname" placeholder="Enter cookname" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" minlength="6" value="youremail@gmail.com"
+        placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password2" value="xxxxxxx" maxlength="20"
+        placeholder="Password" required>
+    </div>
+    <div class="form-group">
+      <label for="fullName">FullName</label>
+      <input type="fullName" class="form-control" id="fullName" name="fullName" value="Ironhack" placeholder="FullName"
+        required>
+    </div>
+    <div class="form-group">
+      <label for="birthay">Birthday</label>
+      <input type="birthday" class="form-control" id="birthday" name="birthday" value="2020-10-02" maxlength="30"
+        placeholder="Birthday" required>
+    </div>
+    <div class="form-group">
+      <label for="zipcode">Zipcode</label>
+      <input type="zipcode" class="form-control" id="zipcode" name="zipcode" value="28220" maxlength="15"
+        placeholder="Zipcode" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type="address" class="form-control" id="address" name="address" value="Avenida España" maxlength="30"
+        placeholder="Address" required>
+    </div>
+    <div class="form-group">
+      <label for="region">Region</label>
+      <select type="region" class="form-control" id="region" name="region">
+        <option value="Alava">Alava</option>
+        <option value="Albacete">Albacete</option>
+        <option value="Alicante">Alicante</option>
+        <option value="Almería">Almería</option>
+        <option value="Asturias">Asturias</option>
+        <option value="Avila">Avila</option>
+        <option value="Badajoz">Badajoz</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Burgos">Burgos</option>
+        <option value="Cáceres">Cáceres</option>
+        <option value="Cádiz">Cádiz</option>
+        <option value="Cantabria">Cantabria</option>
+        <option value="Castellón">Castellón</option>
+        <option value="Ciudad Real">Ciudad Real</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Cuenca">Cuenca</option>
+        <option value="Gerona">Gerona</option>
+        <option value="Guadalajara">Guadalajara</option>
+        <option value="Guipúzcoa">Guipúzcoa</option>
+        <option value="Huelva">Huelva</option>
+        <option value="Huesca">Huesca</option>
+        <option value="Islas Baleares">Islas Baleares</option>
+        <option value="Jaén">Jaén</option>
+        <option value="León">León</option>
+        <option value="Lérida">Lérida</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Málaga">Málaga</option>
+        <option value="Murcia">Murcia</option>
+        <option value="Navarra">Navarra</option>
+        <option value="Orense">Orense</option>
+        <option value="Palencia">Palencia</option>
+        <option value="Las Palmas">Las Palmas</option>
+        <option value="Pontevedra">Pontevedra</option>
+        <option value="La Rioja">La Rioja</option>
+        <option value="Salamanca">Salamanca</option>
+        <option value="Pontevedra">Pontevedra</option>
+        <option value="Segovia">Segovia</option>
+        <option value="Sevilla">Sevilla</option>
+        <option value="Soria">Soria</option>
+        <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+        <option value="Tarragona">Tarragona</option>
+        <option value="Teruel">Teruel</option>
+        <option value="Toledo">Toledo</option>
+        <option value="Valencia">Valencia</option>
+        <option value="Valladolid">Valladolid</option>
+        <option value="Vizcaya">Vizcaya</option>
+        <option value="Zamora">Zamora</option>
+        <option value="Zaragoza">Zaragoza</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="phone" class="form-control" id="phone" name="phone" value="3400" minlength="9" maxlength="9"
+        placeholder="Phone" required>
+    </div>
+    <div class="form-group">
+      <label for="zipcode">Motivation</label>
+      <input type="motivation" class="form-control" id="motivation" name="motivation" placeholder="Motivation" required>
+    </div>
+    <div class="form-group">
+      <label for="certification">Certification</label>
+      <select type="certification" class="form-control" id="certification" name="certification">
+        <option value="PRO">PRO</option>
+        <option value="AMATEUR">AMATEUR</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="foodhHandlingNumber">FoodhHandling Number</label>
+      <input type="foodhHandlingNumber" class="form-control" id="foodhHandlingNumber" name="foodhHandlingNumber"
+        value="0000" minlength="9" maxlength="9" placeholder="FoodhHandlingNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="kitchenNumber">kitchen Number</label>
+      <input type="kitchenNumber" class="form-control" id="kitchenNumber" name="kitchenNumber" value="0000"
+        minlength="9" maxlength="9" placeholder="kitchen Number" required>
+    </div>
+    <div class="form-group">
+      <label for="deliveryTime">Delivery Time Hours</label>
+      <input type="deliveryTime" class="form-control" id="deliveryTime" name="deliveryTime" value="1" minlength="1"
+        maxlength="2" maxlength="9" placeholder="deliveryTime" required>
+    </div>
+    <div class="form-group">
+      <label for="status">Status</label>
+      <select type="status" class="form-control" id="status" name="status">
+        <option value="Green">Green</option>
+        <option value="Red">Red</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-warning">Create account</button>
+    {{#if errorMessage}}
+    <div class="alert alert-danger error" role="alert">
+      {{errorMessage}}
+    </div>
+    {{/if}}
+  </form>
+  <h4>Already have an account? <a href="/loginCook">LOG IN!</a></h4>
+
+  <div class="wrapper2">
+
+    <ul class="bg-bubbles">
+      <li>
+        <img class="logo-nav" src="/images/logoblanco.png" alt="Logo">
+      </li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="20" height="20" alt="Logo"></li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="60" height="60" alt="Logo"></li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="30" height="30" alt="Logo"></li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="20" height="20" alt="Logo"></li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="50" height="50" alt="Logo"></li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="20" height="20" alt="Logo"></li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="10" height="10" alt="Logo"></li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="40" height="40" alt="Logo"></li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="80" height="80" alt="Logo"></li>
+      <li><img class="logo-nav" src="/images/logoblanco.png" width="80" height="80" alt="Logo"></li>
+    </ul>
+  </div>
+
+</div>

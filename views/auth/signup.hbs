@@ -1,0 +1,63 @@
+<div class="container">
+  <h2>USER SIGN UP</h2>
+  <form action='/signup' method='POST'>
+
+    <div class="form-group"></div>
+    <label for=''>Username</label>
+    <input type='username' class="form-control" name='username' required>
+    <div class="form-group"></div>
+    <label for=''>Email</label>
+    <input type='email' class="form-control" minlength="6" name='email' required>
+    <div class="form-group"></div>
+    <label for=''>Password</label>
+    <input type='password' class="form-control" maxlength="20" name='password' required>
+    <div class="form-group"></div>
+    <label for=''>Fullname</label>
+    <input type='fullname' class="form-control" name='fullname' required>
+    <div class="form-group"></div>
+    <label for=''>Birthday</label>
+    <input type='birthday' class="form-control" maxlength="30" name='birthday' required>
+    <div class="form-group"></div>
+    <label for=''>Zipcode</label>
+    <input type='zipcode' class="form-control" maxlength="15" name='zipcode' required>
+    <div class="form-group"></div>
+    <label for=''>Address</label>
+    <input type='address' class="form-control" maxlength="30" name='address' required>
+    <div class="form-group"></div>
+    <label for=''>Phone</label>
+    <input type='phone' class="form-control" minlength="9" maxlength="9" name='phone' required>
+    <div class="form-group"></div>
+
+
+    <button type="submit" class="btn btn-warning">Create account</button>
+
+  </form>
+
+
+  </section {{#if errorMessage}} <div class="error">
+  <p>{{errorMessage}}</p>
+</div>
+{{/if}}
+<h4>Already have an account? <a href="/login">LOG IN!</a></h4>
+</div>
+
+<div class="wrapper">
+
+  <ul class="bg-bubbles">
+    <li>
+      <img class="logo-nav" src="/images/logoblanco.png" alt="Logo">
+    </li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="20" height="20" alt="Logo"></li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="60" height="60" alt="Logo"></li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="30" height="30" alt="Logo"></li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="20" height="20" alt="Logo"></li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="50" height="50" alt="Logo"></li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="20" height="20" alt="Logo"></li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="10" height="10" alt="Logo"></li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="40" height="40" alt="Logo"></li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="80" height="80" alt="Logo"></li>
+    <li><img class="logo-nav" src="/images/logoblanco.png" width="80" height="80" alt="Logo"></li>
+  </ul>
+</div>
+
+</div>

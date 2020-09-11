@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="webheight">
+        {{#if userInSession}}
+        <h2>Welcome, {{ userInSession.username }}!</h2>
+        <p>This is your profile page my friend!</p>
+
+        <a class="nav-link" href="/orders/orders-success">Orders list</a>
+
+        {{else}}
+        <p>Still no logged in user, sorry!</p>
+        {{/if}}
+    </div>
+</div>
